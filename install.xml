@@ -33,6 +33,17 @@
         </operation>
     </file>
 
+    <file path="admin/language/pt-br/common/header.php">
+        <operation error="skip" info="Definição de idioma em portugues para entrada de menu de carrinhos perdidos.">
+            <search ><![CDATA[
+              $_['text_logout']        = 'Sair';
+              ]]></search>
+            <add position="after"><![CDATA[
+              $_['text_bailed_carts']      = 'Carr. perdidos';
+            ]]></add>
+        </operation>
+    </file>
+
     <file path="admin/view/template/common/header.twig">
         <operation error="skip" info="Adds a link in header alerts to bailed carts breakdown.">
             <search ><![CDATA[
